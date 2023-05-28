@@ -175,14 +175,35 @@ section .title{
     margin-top: -45rem;
     place-items: center;
   }
+  .column{
+    width: 100vw;
+    height: 70vh;
+    margin-top: -5rem;
+  }
+
+  .services{
+    margin-top: 1rem;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .service{
+    display: grid;
+    place-items: center;
+  }
+  .service img{
+    width: 5rem;
+  }
   @media screen and (min-width: 992px) {
     section {
       padding: 1em 3em;
     }
-    .column {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-    }
+
   }
 
 @media only screen and (max-width: 1200px) {
