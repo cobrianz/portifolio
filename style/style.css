@@ -251,6 +251,90 @@ section .title{
     margin-top: -50rem;
     place-items: center;
   }
+  .form{
+    margin-top: -30rem;
+    width: 80;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    transition: all 3s ease;
+
+  }
+  .form .right-form{
+    background-color: #c7cbf3;
+    width: 30vw;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+    border-radius: 4rem;
+    height: 40vh;
+  }
+  .form .left-form{
+    background-color: #c7cbf3;
+    width: 30vw;
+    display: grid;
+    place-items: center;
+    border-radius: 4rem;
+    height: 40vh;
+  }
+  .form .left-form form{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+  }
+  .form .left-form form input{
+    display: flex;
+    justify-content: center;
+ /*    margin-left: 50%; */
+    width: 85%;
+    margin-left: 5%;
+    text-align: center;
+    height: 2rem;
+    margin: 3rem;
+    border-radius: var(--border-radius-3);
+    border: none;
+    font-family: var(--font);
+    font-size: 2rem;
+  }
+
+  .form .left-form textarea{
+    display: flex;
+    justify-content: center;
+ /*    margin-left: 50%; */
+    width: 85%;
+    margin-left: 5%;
+    text-align: center;
+    height: 9rem;
+    margin: 3rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-3);
+    border: none;
+    font-family: var(--font);
+    font-size: 2rem;
+    resize: none;
+  }
+  fieldset{
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 4rem;
+    border: 2px solid var(--color-primary);
+    margin-top: -2rem;
+    width: 90%;
+  }
+  form button{
+    border: none;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: .3rem 2rem .3rem 2rem;
+    font-family: var(--font);
+    margin: .4rem;
+    text-align: center;
+  }
+  form button:hover{
+    background: var(--color-success);
+  }
   @media screen and (min-width: 992px) {
     section {
       padding: 1em 3em;
