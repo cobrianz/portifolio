@@ -46,6 +46,7 @@
 }
 body{
     font-family: var(--font);
+    background: linear-gradient(180deg, var(--color-light), #b7e7d6, var(--color-light));
 }
 header{
     width: 100%;
@@ -109,7 +110,7 @@ nav .btn button{
 }
 nav .btn button:hover{
     background-color: transparent;
-    border: 3px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .home{
@@ -134,12 +135,15 @@ nav .btn button:hover{
     width: 20vw;
     margin-top: 10rem;
     margin-right: 35rem;
-}
-
-.right img{
+  }
+  
+  .right img{
+    border-radius: 50%;
     width: 30vw;
-    padding: 2rem;
-}
+    padding: 1rem;
+    background: #c7cbf3;
+    margin: 1rem
+  }
 .about-text {
     color: var(--color-);
     font-family: var(--font); 
@@ -154,10 +158,10 @@ nav .btn button:hover{
     gap: 2rem;
 }
 .social img{
-    width: 3rem;
+    width: 2rem;
     border-radius: 50%;
-    background-color: transparent;
-    border: 3px solid var(--color-primary);
+    background-color: #a3bdcc;
+    border: 1px solid var(--color-primary);
 }
 .left .btn{
     border: none;
@@ -171,7 +175,7 @@ nav .btn button:hover{
 }
 .left .btn:hover{
     background-color: transparent;
-    border: 3px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     color: black;
 }
 
@@ -208,6 +212,7 @@ section .title{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    transition: all 3s ease;
   }
 
   .service{
@@ -218,6 +223,7 @@ section .title{
     margin: 2rem;
     background-color: #c7cbf3;
     border: none;
+    transition: all 1s ease;
 
   }
   .service img{
@@ -238,7 +244,7 @@ section .title{
   }
 
   .service:hover{
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     background-color: transparent;
   }
   .service:hover h3{
@@ -248,9 +254,85 @@ section .title{
     height: 100vh;
     width: 100%;
     display: grid;
-    margin-top: -50rem;
+    margin: -28rem 0 4rem 0;
     place-items: center;
   }
+  .qualification{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -15rem;
+    margin-bottom: 5rem;
+    background: #c7cbf3;
+    padding: 5rem;
+    border-radius: 4rem;
+    gap: 32rem;
+    transition: all 2s ease;
+}
+
+.qualification:hover{
+  background: none;
+  border: 1px solid var(--color-primary);
+}
+
+.masters{
+    margin-bottom: 2rem;
+}
+.education p{
+    margin-bottom: 3rem;
+}
+
+.masters h3{
+    color: #5c6274;
+    margin-bottom: .4rem;
+}
+.qualification:hover h3{
+  color: var(--color-primary);
+}
+
+.projects1{
+  margin-top: -32rem;
+}
+
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -40rem;
+}
+
+.recent{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.recent img{
+  width: 350px;
+  border-radius: 10%;
+}
+
+.anim{
+  margin-left: 10rem;
+  text-align: center;
+}
+
+.anim img{
+  border: 1px solid var(--color-primary);
+  border-radius: 3rem;
+}
+.anim h1{
+  color: var(--color-dark);
+}
+
+.anim h1:hover{
+  color: var(--color-primary);
+}
+
+.anim p{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  color: rgb(49, 43, 43);
+}
   .form{
     margin-top: -30rem;
     width: 80;
@@ -258,8 +340,10 @@ section .title{
     justify-content: space-between;
     gap: 5rem;
     transition: all 3s ease;
-
+    
   }
+  
+ 
   .form .right-form{
     background-color: #c7cbf3;
     width: 30vw;
@@ -270,6 +354,11 @@ section .title{
     border-radius: 4rem;
     height: 40vh;
   }
+  .form .right-form:hover{
+    background: #eff4fa;
+    border: 1px solid var(--color-primary);
+  }
+
   .form .left-form{
     background-color: #c7cbf3;
     width: 30vw;
@@ -278,6 +367,10 @@ section .title{
     border-radius: 4rem;
     height: 40vh;
   }
+.form .left-form:hover{
+  background: #eff4fa;
+  border: 1px solid var(--color-primary);
+}
   .form .left-form form{
     width: 100%;
     height: 80%;
@@ -318,10 +411,8 @@ section .title{
   fieldset{
     text-align: center;
     font-size: 2rem;
-    border-radius: 4rem;
-    border: 2px solid var(--color-primary);
+    border: none;
     margin-top: -2rem;
-    width: 90%;
   }
   form button{
     border: none;
@@ -335,6 +426,36 @@ section .title{
   form button:hover{
     background: var(--color-success);
   }
+
+  .testimonial{
+    margin-top: -14rem;
+  }
+
+  footer{
+    margin-top: -30rem;
+  }
+ .footer{
+  background-color: linear-gradient(45deg, var(--color-light),#c7cbf3);
+  display: grid;
+  place-items: center;
+  text-align: center;
+ }
+
+ .footer2{
+  display: grid;
+  place-items: center;
+ }
+ .footer-details{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem;
+ }
+
+ footer .social img{
+  background-color: #181a1e;
+  border: none;
+ }
   @media screen and (min-width: 992px) {
     section {
       padding: 1em 3em;
